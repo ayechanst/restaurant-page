@@ -5,7 +5,8 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "npx webpack --watch"
+    "watch": "npx webpack --watch",
+    "start": "webpack"
   },
   "repository": {
     "type": "git",
