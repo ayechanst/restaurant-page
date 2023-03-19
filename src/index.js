@@ -1,14 +1,17 @@
 // this is where all the functions are imported to be converted to main.js
-import { makeHead, makeFooter, linkArray } from './home';
+import { makeSkeleton } from './skeleton';
 
-makeHead();
-makeFooter(linkArray);
+if (content.innerHTML == false) {
+  makeSkeleton();
+}
 
 const buttons = document.querySelectorAll('button');
 buttons.forEach((btn) => {
   btn.addEventListener('click', () => {
     if (btn.innerHTML === 'home') {
       //load the home page
+      makeHead();
+      makeFooter(linkArray);
       console.log('home page');
     } else if (btn.innerHTML === 'about') {
       //load the about page
