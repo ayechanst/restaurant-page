@@ -1,17 +1,33 @@
 const content = document.getElementById('content');
-const linkArray = ['contact me', 'leave a review', 'about', 'blog'];
+const buttonArray = ['home', 'about', 'menu'];
+export const linkArray = ['contact me', 'leave a review', 'about', 'blog'];
 
-function makeHead() {
+function makeTabButtons(array) {
+  const tabsContainer = document.createElement('div');
+  array.forEach((item) => {
+    const button = document.createElement('button');
+    button.innerHTML = `${item}`;
+    tabsContainer.appendChild(button);
+  });
+  return tabsContainer;
+}
+
+export function makeHead() {
+  // declaring variables
   const headDiv = document.createElement('div');
   const title = document.createElement('h1');
+  const tabButtons = makeTabButtons(buttonArray);
+  // modifying
   headDiv.className = 'banner';
   title.className = 'title';
   title.innerHTML = "The Feral Fox's Food";
+  // appending
   headDiv.appendChild(title);
+  headDiv.appendChildf(tabButtons);
   content.appendChild(headDiv);
 }
 
-function makeFooter(array) {
+export function makeFooter(array) {
   // function takes in array and turns it into list elements
   const footer = document.createElement('div');
   const links = document.createElement('ul');
@@ -25,6 +41,3 @@ function makeFooter(array) {
   footer.appendChild(links);
   content.appendChild(footer);
 }
-
-makeHead();
-makeFooter(linkArray);
