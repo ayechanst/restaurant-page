@@ -23,7 +23,7 @@ export function makeHead() {
   title.innerHTML = "The Feral Fox's Food";
   // appending
   headDiv.appendChild(title);
-  headDiv.appendChildf(tabButtons);
+  headDiv.appendChild(tabButtons);
   content.appendChild(headDiv);
 }
 
