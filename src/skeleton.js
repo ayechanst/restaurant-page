@@ -1,4 +1,4 @@
-const content = document.getElementById('content');
+export const content = document.getElementById('content');
 const buttonArray = ['home', 'about', 'menu'];
 const linkArray = ['contact me', 'leave a review', 'about', 'blog'];
 
@@ -29,7 +29,7 @@ function makeHead() {
 
 function makeBody() {
   const body = document.createElement('div');
-  body.className = 'body';
+  body.setAttribute('id', 'body');
   body.innerHTML = 'here is the contents of this page';
   content.appendChild(body);
 }

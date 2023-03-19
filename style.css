@@ -11,10 +11,14 @@ img {
   background-color: brown;
 }
 
-.body {
+#body {
   background-color: cornsilk;
 }
 
 .footer {
   background-color: chocolate;
+}
+
+.card {
+  background-color: cornflowerblue;
 }
