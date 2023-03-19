@@ -6,3 +6,11 @@ img {
   height: 300px;
   width: auto;
 }
+
+.banner {
+  background-color: brown;
+}
+
+.footer {
+  background-color: chocolate;
+}
