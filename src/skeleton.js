@@ -7,6 +7,7 @@ const linkArray = ['contact me', 'leave a review', 'about', 'blog'];
 
 function makeTabButtons(array) {
   const tabsContainer = document.createElement('div');
+  tabsContainer.className = 'button-container';
   array.forEach((item) => {
     const button = document.createElement('button');
     button.innerHTML = `${item}`;
@@ -40,14 +41,15 @@ function makeBody() {
 function makeFooter(array) {
   // function takes in array and turns it into list elements
   const footer = document.createElement('div');
-  const links = document.createElement('ul');
+  const links = document.createElement('div');
   array.forEach((item) => {
-    const link = document.createElement('li');
+    const link = document.createElement('a');
     link.className = 'footer-link';
     link.innerHTML = `${item}`;
     links.appendChild(link);
   });
   footer.className = 'footer';
+  links.className = 'footer-container';
   footer.appendChild(links);
   content.appendChild(footer);
 }

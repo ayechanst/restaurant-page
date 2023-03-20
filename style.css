@@ -1,14 +1,26 @@
 body {
   background-color: purple;
+  margin: none;
 }
 
-img {
-  height: 300px;
-  width: auto;
-}
-
+/* skeleton */
 .banner {
   background-color: brown;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  border-radius: 15px;
+  border: none;
+}
+
+.button-container {
+  display: flex;
+  gap: 25px;
+  padding-bottom: 25px;
 }
 
 #body {
@@ -19,10 +31,21 @@ img {
   background-color: chocolate;
 }
 
+.footer-container {
+  display: flex;
+  gap: 100px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* menu */
+
 .card {
   background-color: cornflowerblue;
   margin: 5px;
 }
+
+/* about */
 
 .about-card {
   background-color: aquamarine;
