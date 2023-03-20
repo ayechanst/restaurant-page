@@ -1,6 +1,5 @@
 body {
   background-color: purple;
-  margin: none;
 }
 
 /* skeleton */
@@ -40,9 +39,17 @@ button {
 
 /* menu */
 
+.menu-card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
 .card {
+  display: grid;
+
   background-color: cornflowerblue;
   margin: 5px;
+  padding: 10px;
 }
 
 /* about */

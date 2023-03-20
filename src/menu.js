@@ -16,6 +16,7 @@ export const foxMenuItems = [
     1,
     'Clear water infused with microbes for gut health',
   ],
+  ['Mountain Dew', 5, 'Dew dropplets collected from blades of grass'],
 ];
 
 const humanMenuItems = ['rice', 'steak', 'sparkling water'];
@@ -51,5 +52,8 @@ function fillCards(menuItems) {
 export function makeMenu() {
   const body = document.getElementById('body');
   const cardArray = fillCards(foxMenuItems);
-  cardArray.forEach((card) => body.appendChild(card));
+  const menuCardContainer = document.createElement('div');
+  cardArray.forEach((card) => menuCardContainer.appendChild(card));
+  body.appendChild(menuCardContainer);
+  menuCardContainer.className = 'menu-card-container';
 }

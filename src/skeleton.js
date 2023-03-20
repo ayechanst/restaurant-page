@@ -3,7 +3,7 @@ import { makeAboutPage } from './about';
 import { makeMenu } from './menu';
 export const content = document.getElementById('content');
 const buttonArray = ['home', 'about', 'menu'];
-const linkArray = ['contact me', 'leave a review', 'about', 'blog'];
+const linkArray = ['contact us', 'leave a review', 'about', 'blog'];
 
 function makeTabButtons(array) {
   const tabsContainer = document.createElement('div');
@@ -34,7 +34,6 @@ function makeHead() {
 function makeBody() {
   const body = document.createElement('div');
   body.setAttribute('id', 'body');
-  body.innerHTML = 'here is the contents of this page';
   content.appendChild(body);
 }
 
