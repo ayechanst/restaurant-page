@@ -1,3 +1,5 @@
+import { test } from './about';
+import { makeMenu } from './menu';
 export const content = document.getElementById('content');
 const buttonArray = ['home', 'about', 'menu'];
 const linkArray = ['contact me', 'leave a review', 'about', 'blog'];
@@ -51,6 +53,28 @@ function makeFooter(array) {
 
 export function makeSkeleton() {
   makeHead();
+  const buttons = document.querySelectorAll('button');
+  buttons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      if (btn.innerHTML === 'home') {
+        content.innerHTML = '';
+        makeSkeleton();
+        console.log('home page button has been clicked');
+      } else if (btn.innerHTML === 'about') {
+        content.innerHTML = '';
+        makeSkeleton();
+        test();
+        console.log('about button has been clicked');
+      } else if (btn.innerHTML === 'menu') {
+        content.innerHTML = '';
+        makeSkeleton();
+        makeMenu();
+        console.log('menu has been clicked');
+      } else {
+        console.log('ERROR: page switching logic');
+      }
+    });
+  });
   makeBody();
   makeFooter(linkArray);
 }
