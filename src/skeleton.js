@@ -1,4 +1,5 @@
-import { test } from './about';
+import { makeHome } from './home';
+import { makeAboutPage } from './about';
 import { makeMenu } from './menu';
 export const content = document.getElementById('content');
 const buttonArray = ['home', 'about', 'menu'];
@@ -59,17 +60,15 @@ export function makeSkeleton() {
       if (btn.innerHTML === 'home') {
         content.innerHTML = '';
         makeSkeleton();
-        console.log('home page button has been clicked');
+        makeHome();
       } else if (btn.innerHTML === 'about') {
         content.innerHTML = '';
         makeSkeleton();
-        test();
-        console.log('about button has been clicked');
+        makeAboutPage();
       } else if (btn.innerHTML === 'menu') {
         content.innerHTML = '';
         makeSkeleton();
         makeMenu();
-        console.log('menu has been clicked');
       } else {
         console.log('ERROR: page switching logic');
       }
