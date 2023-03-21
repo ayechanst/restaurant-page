@@ -39,14 +39,31 @@ button {
 
 /* menu */
 
+.card-image-container {
+  background-size: cover;
+  /* padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px; */
+  padding: 50px;
+}
+
 .menu-card-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
 
-.card {
-  display: grid;
+.image-wrapper {
+  padding: 5px;
+}
 
+.card {
+  padding: 10px;
+}
+
+.card-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   background-color: cornflowerblue;
   margin: 5px;
   padding: 10px;
