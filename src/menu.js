@@ -1,61 +1,61 @@
 export const foxMenuItems = [
   [
     'Burnt Bird',
-    0.5,
+    '0.50',
     'Crow struck by lightning seasoned with dirt and gravel',
     'burnt-crow.jpg',
   ],
   [
     'Rotting Roadkill',
-    1,
+    '1.00',
     'Sun dried flesh with patches of fur and an antler',
     'roadkill.jpg',
   ],
   [
     'Decaying Dog',
-    4,
+    '4.00',
     'Cool canine with a bacterial aroma and a batch of fungi',
     'decaying-dog.jpg',
   ],
   [
     'Fat Frog',
-    2,
+    '2.00',
     'Rich amphibian juicy with mucus and mating pheremones',
     'frog.jpg',
   ],
   [
     'Dead Donkey',
-    10,
+    '10.00',
     'Large family meal with bones and marrow',
     'decaying-donkey.jpg',
   ],
   [
     'Wounded Wombat',
-    8,
+    '8.00',
     'Live wombat with four broken legs',
     'wounded-wombat.jpg',
   ],
   [
     'Sleeping Serpant',
-    4,
+    '4.00',
     'Live serpant infused with milk of the poppy',
     'sleeping-snake.jpg',
   ],
   [
     'Muddy Water',
-    0.5,
+    '0.50',
     'Brown water with hints of earth and minerals',
     'muddy-water.jpg',
   ],
   [
     'Stagnant Puddle Water',
-    1,
+    '1.00',
     'Clear water infused with microbes for gut health',
     'stagnant-water.jpg',
   ],
   [
     'Mountain Dew',
-    5,
+    '5.00',
     'Dew dropplets collected from blades of grass',
     'dew.jpg',
   ],
@@ -74,7 +74,7 @@ function fillCards(menuItems) {
 
   menuItems.forEach((item) => {
     let card = makeCard();
-    const dish = document.createElement('div');
+    const dish = document.createElement('h3');
     dish.className = 'dish';
     const price = document.createElement('div');
     price.className = 'price';
@@ -104,9 +104,15 @@ export function makeMenu() {
   const body = document.getElementById('body');
   const cardArray = fillCards(foxMenuItems);
   const menuCardContainer = document.createElement('div');
+  let counter = 0;
   cardArray.forEach((card) => {
     const cardContainer = document.createElement('div');
-    cardContainer.className = 'card-container';
+    if (counter % 2 === 0) {
+      cardContainer.className = 'card-container left';
+    } else {
+      cardContainer.className = 'card container right';
+    }
+    counter += 1;
     cardContainer.appendChild(card);
     menuCardContainer.appendChild(cardContainer);
   });
