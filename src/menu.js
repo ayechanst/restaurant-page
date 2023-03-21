@@ -9,24 +9,56 @@ export const foxMenuItems = [
     'Rotting Roadkill',
     1,
     'Sun dried flesh with patches of fur and an antler',
-    'decaying-dog.jpg',
+    'roadkill.jpg',
   ],
   [
     'Decaying Dog',
     4,
     'Cool canine with a bacterial aroma and a batch of fungi',
+    'decaying-dog.jpg',
   ],
-  ['Fat Frog', 2, 'Rich amphibian juicy with mucus and mating pheremones'],
-  ['Dead Donkey', 10, 'Large family meal with bones and marrow'],
-  ['Wounded Wombat', 8, 'Live wombat with four broken legs'],
-  ['Sleeping Serpant', 4, 'Live serpant infused with milk of the poppy'],
-  ['Muddy Water', 0.5, 'Brown water with hints of earth and minerals'],
+  [
+    'Fat Frog',
+    2,
+    'Rich amphibian juicy with mucus and mating pheremones',
+    'frog.jpg',
+  ],
+  [
+    'Dead Donkey',
+    10,
+    'Large family meal with bones and marrow',
+    'decaying-donkey.jpg',
+  ],
+  [
+    'Wounded Wombat',
+    8,
+    'Live wombat with four broken legs',
+    'wounded-wombat.jpg',
+  ],
+  [
+    'Sleeping Serpant',
+    4,
+    'Live serpant infused with milk of the poppy',
+    'sleeping-snake.jpg',
+  ],
+  [
+    'Muddy Water',
+    0.5,
+    'Brown water with hints of earth and minerals',
+    'muddy-water.jpg',
+  ],
   [
     'Stagnant Puddle Water',
     1,
     'Clear water infused with microbes for gut health',
+    'stagnant-water.jpg',
   ],
-  ['Mountain Dew', 5, 'Dew dropplets collected from blades of grass'],
+  [
+    'Mountain Dew',
+    5,
+    'Dew dropplets collected from blades of grass',
+    'dew.jpg',
+  ],
 ];
 
 const humanMenuItems = ['rice', 'steak', 'sparkling water'];
