@@ -50,20 +50,22 @@ button {
 
 .menu-card-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .image-wrapper {
+  display: grid;
   padding: 5px;
+  grid-row: 1 / span 3;
 }
 
 .card {
   padding: 10px;
-}
-
-.card-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+}
+
+.card-container {
   background-color: cornflowerblue;
   margin: 5px;
   padding: 10px;

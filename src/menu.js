@@ -75,8 +75,11 @@ function fillCards(menuItems) {
   menuItems.forEach((item) => {
     let card = makeCard();
     const dish = document.createElement('div');
+    dish.className = 'dish';
     const price = document.createElement('div');
+    price.className = 'price';
     const description = document.createElement('div');
+    description.className = 'description';
     const imgContainer = document.createElement('div');
     const imgWrapper = document.createElement('div');
 
@@ -101,7 +104,12 @@ export function makeMenu() {
   const body = document.getElementById('body');
   const cardArray = fillCards(foxMenuItems);
   const menuCardContainer = document.createElement('div');
-  cardArray.forEach((card) => menuCardContainer.appendChild(card));
+  cardArray.forEach((card) => {
+    const cardContainer = document.createElement('div');
+    cardContainer.className = 'card-container';
+    cardContainer.appendChild(card);
+    menuCardContainer.appendChild(cardContainer);
+  });
   body.appendChild(menuCardContainer);
   menuCardContainer.className = 'menu-card-container';
 }
