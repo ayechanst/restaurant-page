@@ -24,6 +24,7 @@ button {
 
 #body {
   background-color: cornsilk;
+  padding-bottom: 10px;
 }
 
 .footer {
@@ -44,7 +45,7 @@ button {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(10, 1fr);
-  padding-top: 10px;
+  padding-top: 5px;
 }
 
 .card-container {
@@ -95,4 +96,28 @@ button {
 
 .about-card {
   background-color: aquamarine;
+}
+
+/* home */
+
+.home-container {
+  height: 357px;
+  display: grid;
+}
+
+.home-content {
+  display: flex;
+}
+
+.image-container {
+  background-size: cover;
+  padding: 170px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.text-container {
+  padding-right: 160px;
+  padding-top: 40px;
+  padding-left: 40px;
 }
